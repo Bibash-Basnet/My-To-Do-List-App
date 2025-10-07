@@ -51,4 +51,3 @@ def clear_task():
     flash('All Tasks cleared!!', 'info')
     return redirect(url_for('tasks.view_tasks'))
 
-

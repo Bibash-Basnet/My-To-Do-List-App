@@ -20,10 +20,10 @@
         </div>
     </header>
     <main class="container">
-        {% with messages = get_flashed_message(with_categories =True) %}
+        {% with messages = get_flashed_messages(with_categories=True) %}
             {% for category, message in messages %}
-                <div class=""flash {{category}}"> {{message}}</div>"
-            {% endfor %}
+                 <div class="flash {{ category }}">{{ message }}</div>
+         {% endfor %}
         {% endwith %}
 
         {% block content %}
